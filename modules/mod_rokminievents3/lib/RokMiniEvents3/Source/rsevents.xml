@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="rokminievents3-sources">
+        <fieldset name="rsevents" addpath="/administrator/components/com_rsevents/elements/">
+            <field name="spacer" type="break" default="" label="RSEvents Settings" description=""/>
+            <field name="rsevents" type="list" default="1" label="ROKMINIEVENTS3_RSEVENTS_LABEL_ENABLE"
+                   description="ROKMINIEVENTS3_RSEVENTS_DESC_ENABLE">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="rsevents_category" type="category" default="" description="ROKMINIEVENTS3_RSEVENTS_DESC_CATEGORY" extension="com_rseventspro" label="ROKMINIEVENTS3_RSEVENTS_LABEL_CATEGORY" multiple="multiple">
+                <option value="0">JOPTION_ALL_CATEGORIES</option>
+            </field>
+            <field name="rsevents_venue" type="locationsfield" default="" label="ROKMINIEVENTS3_RSEVENTS_LABEL_VENUE"
+                   description="ROKMINIEVENTS3_RSEVENTS_DESC_VENUE"/>
+            <field name="rsevents_total" type="text" size="4" default="10"
+                   label="ROKMINIEVENTS3_RSEVENTS_LABEL_MAXRESULTS"
+                   description="ROKMINIEVENTS3_RSEVENTS_DESC_MAXRESULTS"/>
+            <!--<field name="rsevents_user" type="list" default="1" label="ROKMINIEVENTS3_RSEVENTS_LABEL_USERREVENTS" description="ROKMINIEVENTS3_RSEVENTS_DESC_USERREVENTS">-->
+            <!--<option value="1">YES</option>-->
+            <!--<option value="0">NO</option>-->
+            <!--</field>-->
+            <field name="rsevents_past" type="list" default="0" label="ROKMINIEVENTS3_RSEVENTS_LABEL_PASTEVENTS"
+                   description="ROKMINIEVENTS3_RSEVENTS_DESC_PASTEVENTS">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="rsevents_links" type="list" label="ROKMINIEVENTS3_RSEVENTS_LABEL_LINKTO"
+                   description="ROKMINIEVENTS3_RSEVENTS_DESC_LINKTO">
+                <option value="link_no">ROKMINIEVENTS3_RSEVENTS_DONTLINK</option>
+                <option value="link_internal">ROKMINIEVENTS3_RSEVENTS_LINKASINTERNAL</option>
+                <option value="link_external">ROKMINIEVENTS3_RSEVENTS_LINKASEXTERNAL</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>

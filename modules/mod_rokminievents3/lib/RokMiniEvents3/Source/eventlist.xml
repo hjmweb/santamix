@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="rokminievents3-sources">
+        <fieldset name="eventlist" addpath="/modules/mod_rokminievents3/lib/RokMiniEvents3/Source/eventlist">
+            <field name="spacer" type="break" default="" label="EventList Settings" description=""/>
+            <field name="eventlist" type="radio" default="1" label="ROKMINIEVENTS3_EVENTLIST_LABEL_ENABLE"
+                   description="ROKMINIEVENTS3_EVENTLIST_DESC_ENABLE">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="eventlist_category" type="eventlistcategory" default="0"
+                   label="ROKMINIEVENTS3_EVENTLIST_LABEL_CATEGORY" description="ROKMINIEVENTS3_EVENTLIST_DESC_CATEGORY"/>
+            <field name="eventlist_venue" type="eventlistvenue" default="0" label="ROKMINIEVENTS3_EVENTLIST_LABEL_VENUE"
+                   description="ROKMINIEVENTS3_EVENTLIST_DESC_VENUE"/>
+            <field name="eventlist_total" type="text" size="4" default="10"
+                   label="ROKMINIEVENTS3_EVENTLIST_LABEL_MAXRESULTS"
+                   description="ROKMINIEVENTS3_EVENTLIST_DESC_MAXRESULTS"/>
+            <!--<field name="eventlist_user" type="list" default="1" label="ROKMINIEVENTS3_EVENTLIST_LABEL_USERREVENTS" description="ROKMINIEVENTS3_EVENTLIST_DESC_USERREVENTS">-->
+            <!--<option value="1">YES</option>-->
+            <!--<option value="0">NO</option>-->
+            <!--</field>-->
+            <field name="eventlist_past" type="list" default="1" label="ROKMINIEVENTS3_EVENTLIST_LABEL_PASTEVENTS"
+                   description="ROKMINIEVENTS3_EVENTLIST_DESC_PASTEVENTS">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="eventlist_dates_format" type="list" default="1"
+                   label="ROKMINIEVENTS3_EVENTLIST_LABEL_DATES_FORMAT"
+                   description="ROKMINIEVENTS3_EVENTLIST_DESC__DATES_FORMAT">
+                <option value="utc">UTC</option>
+                <option value="joomla">JOOMLA_TIMEZONE</option>
+            </field>
+            <field name="eventlist_links" type="list" label="ROKMINIEVENTS3_EVENTLIST_LABEL_LINKTO"
+                   description="ROKMINIEVENTS3_EVENTLIST_DESC_LINKTO">
+                <option value="link_no">ROKMINIEVENTS3_EVENTLIST_DONTLINK</option>
+                <option value="link_internal">ROKMINIEVENTS3_EVENTLIST_LINKASINTERNAL</option>
+                <option value="link_external">ROKMINIEVENTS3_EVENTLIST_LINKASEXTERNAL</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>

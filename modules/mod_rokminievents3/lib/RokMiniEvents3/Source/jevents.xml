@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="rokminievents3-sources">
+        <fieldset name="jevents" addpath="/administrator/components/com_jevents/elements/">
+            <field name="spacer" type="break" default="" label="JEvents Settings" description=""/>
+            <field name="jevents" type="list" default="1" label="ROKMINIEVENTS3_JEVENTS_LABEL_ENABLE"
+                   description="ROKMINIEVENTS3_JEVENTS_DESC_ENABLE">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="jevents_category" type="category" default="" description="ROKMINIEVENTS3_JEVENTS_DESC_CATEGORY" extension="com_jevents" label="ROKMINIEVENTS3_JEVENTS_LABEL_CATEGORY" multiple="multiple">
+                <option value="0">JOPTION_ALL_CATEGORIES</option>
+            </field>
+            <field name="jevents_total" type="text" size="4" default="10" label="ROKMINIEVENTS3_JEVENTS_LABEL_MAXRESULTS"
+                   description="ROKMINIEVENTS3_JEVENTS_DESC_MAXRESULTS"/>
+            <field name="jevents_norepeats" type="list" default="0" label="ROKMINIEVENTS3_JEVENTS_LABEL_DISPLAY_REPEATS"
+                   description="ROKMINIEVENTS3_JEVENTS_DESC_DISPLAY_REPEATS">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="jevents_past" type="list" default="1" label="ROKMINIEVENTS3_JEVENTS_LABEL_PASTEVENTS"
+                   description="ROKMINIEVENTS3_JEVENTS_DESC_PASTEVENTS">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="jevents_links" type="list" label="ROKMINIEVENTS3_JEVENTS_LABEL_LINKTO"
+                   description="ROKMINIEVENTS3_JEVENTS_DESC_LINKTO">
+                <option value="link_no">ROKMINIEVENTS3_JEVENTS_DONTLINK</option>
+                <option value="link_internal_event">ROKMINIEVENTS3_JEVENTS_EVENTASINTERNAL</option>
+                <option value="link_external_event">ROKMINIEVENTS3_JEVENTS_EVENTASEXTERNAL</option>
+                <option value="link_internal">ROKMINIEVENTS3_JEVENTS_LINKASINTERNAL</option>
+                <option value="link_external">ROKMINIEVENTS3_JEVENTS_LINKASEXTERNAL</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>

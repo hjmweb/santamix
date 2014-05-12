@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="rokminievents3-sources">
+        <fieldset name="jomsocial" addpath="/modules/mod_rokminievents3/lib/RokMiniEvents3/Source/jomsocial">
+            <field name="spacer" type="break" default="" label="JomSocial Settings" description=""/>
+            <field name="jomsocial" type="list" default="1" label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_ENABLE"
+                   description="ROKMINIEVENTS3_JOMSOCIAL_DESC_ENABLE">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="jomsocial_category" type="jomsocialeventcategory" default="0" multiple="true"
+                   label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_CATEGORY" description="ROKMINIEVENTS3_JOMSOCIAL_DESC_CATEGORY"/>
+            <field name="jomsocial_total" type="text" size="4" default="10"
+                   label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_MAXRESULTS"
+                   description="ROKMINIEVENTS3_JOMSOCIAL_DESC_MAXRESULTS"/>
+            <!--<field name="jomsocial_user" type="list" default="1" label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_USERREVENTS" description="ROKMINIEVENTS3_JOMSOCIAL_DESC_USERREVENTS">
+               <option value="1">YES</option>
+               <option value="0">NO</option>
+           </field>-->
+            <field name="jomsocial_type" type="list" default="all" label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_GROUPEVENTS"
+                   description="ROKMINIEVENTS3_JOMSOCIAL_DESC_GROUPEVENTS">
+                <option value="all">JYES</option>
+                <option value="profile">JNO</option>
+            </field>
+
+            <field name="jomsocial_past" type="list" default="1" label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_PASTEVENTS"
+                   description="ROKMINIEVENTS3_JOMSOCIAL_DESC_PASTEVENTS">
+                <option value="0">JYES</option>
+                <option value="1">JNO</option>
+            </field>
+
+            <field name="jomsocial_links" type="list" label="ROKMINIEVENTS3_JOMSOCIAL_LABEL_LINKTO"
+                   description="ROKMINIEVENTS3_JOMSOCIAL_DESC_LINKTO">
+                <option value="link_no">ROKMINIEVENTS3_JOMSOCIAL_DONTLINK</option>
+                <option value="link_internal">ROKMINIEVENTS3_JOMSOCIAL_LINKASINTERNAL</option>
+                <option value="link_external">ROKMINIEVENTS3_JOMSOCIAL_LINKASEXTERNAL</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>

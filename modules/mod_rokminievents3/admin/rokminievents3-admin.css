@@ -1,0 +1,11 @@
+/**
+ * @version   $Id: rokminievents3-admin.css 20114 2014-04-02 17:18:27Z btowles $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+img.calendar {vertical-align: middle;border: 0;padding-left: 5px;}
+.rsevents-selector {float: left;margin-bottom: 10px;}
+.rok-break {border-bottom:1px solid #eee;font-size:16px;color:#0088CC;margin-top:15px;padding:2px 0;width:100%;}
+div.themeset > div.control-label {margin-bottom:18px;}
+div.themeset > div.controls {margin-bottom:18px;}

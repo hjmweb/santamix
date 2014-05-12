@@ -1,0 +1,11 @@
+((function(){var a=new Class({options:{},initialize:function(){this.page=1;this.request=new Request({url:RokMiniEvents3URL,onSuccess:this.onSuccess.bind(this)});
+this.bounds={next:this.next.bind(this),previous:this.previous.bind(this),page:this.pagination.bind(this)};this.attach();},attach:function(){document.id(document).addEvents({"click:relay([data-rokminievents3] [data-rokminievents3-next])":this.bounds.next,"click:relay([data-rokminievents3] [data-rokminievents3-previous])":this.bounds.previous,"click:relay([data-rokminievents3] [data-rokminievents3-page])":this.bounds.page});
+},getContainer:function(b){if(typeOf(b)=="number"){return document.getElement("[data-rokminievents3-id="+b+"]");}return b.getParent("[data-rokminievents3]");
+},getSettings:function(b){b=b.getProperty("data-rokminievents3")?b:this.getContainer(b);var c=JSON.decode(b.getProperty("data-rokminievents3")||{});return c;
+},next:function(c,b){this.toPage(c,b,++this.page);},previous:function(c,b){this.toPage(c,b,--this.page);},pagination:function(c,b){this.toPage(c,b,b.get("data-rokminievents3-page")||1);
+},toPage:function(f,b,d){var c=this.getSettings(b);if(!c){return;}this.page=parseInt(d,10);if(d>c.pages){this.page=d=1;}if(d<1){this.page=d=c.pages;}this.request.cancel().send("moduleid="+c.id+"&page="+d);
+},onSuccess:function(c){if(!JSON.validate(c)){throw new Error("An error occurred while receiving data from RokMiniEvents3. The response is not JSON valid. Response: "+c);
+}var e=JSON.decode(c),b,g={before:[],after:[]},f=new Element("ul");if(e.status!="success"){throw new Error('The response from RokMiniEvents3 faild with the error "'+e.message+'". Response: '+c);
+}if(e.payload&&e.payload.html){b=this.getContainer(e.id).getElement("ul.rme-items");b.empty();e.payload.html.forEach(function(h){f.set("html",h);f.getFirst().set("tween",{duration:"short",transition:"quad:out",link:"cancel"});
+f.getFirst().inject(b).setStyle("opacity",0);});b.getChildren().forEach(function(j,h){setTimeout(function(){j.tween("opacity",1);},100*h);});var d=this.getContainer(e.id).getElements("[data-rokminievents3-page]");
+if(d.length){d.removeClass("active")[this.page-1].addClass("active");}}}});window.addEvent("domready",function(){new a();});})());

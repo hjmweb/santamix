@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="rokminievents3-sources">
+        <fieldset name="redevent" addpath="/modules/mod_rokminievents3/lib/RokMiniEvents3/Source/redevent">
+            <field name="spacer" type="break" default="" label="RedEvent Settings" description=""/>
+            <field name="redevent" type="list" default="1" label="ROKMINIEVENTS3_REDEVENT_LABEL_ENABLE"
+                   description="ROKMINIEVENTS3_REDEVENT_DESC_ENABLE">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="redevent_category" type="redeventcategory" default="0"
+                   label="ROKMINIEVENTS3_REDEVENT_LABEL_CATEGORY" description="ROKMINIEVENTS3_REDEVENT_DESC_CATEGORY"/>
+            <field name="redevent_venue" type="redeventvenue" default="0" label="ROKMINIEVENTS3_REDEVENT_LABEL_VENUE"
+                   description="ROKMINIEVENTS3_REDEVENT_DESC_VENUE"/>
+            <field name="redevent_total" type="text" size="4" default="10"
+                   label="ROKMINIEVENTS3_REDEVENT_LABEL_MAXRESULTS"
+                   description="ROKMINIEVENTS3_REDEVENT_DESC_MAXRESULTS"/>
+
+            <field name="redevent_include_archived" type="list" default="1"
+                   label="ROKMINIEVENTS3_REDEVENT_LABEL_INCLUDEARCHIVEDEVENTS"
+                   description="ROKMINIEVENTS3_REDEVENT_DESC_INCLUDEARCHIVEDEVENTS">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="redevent_dates_format" type="list" default="1"
+                   label="ROKMINIEVENTS3_REDEVENT_LABEL_DATES_FORMAT"
+                   description="ROKMINIEVENTS3_REDEVENT_DESC__DATES_FORMAT">
+                <option value="utc">UTC</option>
+                <option value="joomla">JOOMLA_TIMEZONE</option>
+            </field>
+            <field name="redevent_links" type="list" label="ROKMINIEVENTS3_REDEVENT_LABEL_LINKTO"
+                   description="ROKMINIEVENTS3_REDEVENT_DESC_LINKTO">
+                <option value="link_no">ROKMINIEVENTS3_REDEVENT_DONTLINK</option>
+                <option value="link_internal">ROKMINIEVENTS3_REDEVENT_LINKASINTERNAL</option>
+                <option value="link_external">ROKMINIEVENTS3_REDEVENT_LINKASEXTERNAL</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>

@@ -1,0 +1,28 @@
+/**
+ * @author RocketTheme, LLC http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2014 RocketTheme, LLC
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+/* Layout */
+.rme-items > li {float: left;margin: 10px 1%;padding: 10px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.cols-1 > li {width: 98%;}
+.cols-2 > li {width: 48%;}
+.cols-3 > li {width: 31.33%;}
+.cols-4 > li {width: 23%;}
+.cols-5 > li {width: 18%;}
+.cols-6 > li {width: 14.6667%;}
+.cols-7 > li {width: 12.2555%;}
+.cols-8 > li {width: 10.5%;}
+.cols-9 > li {width: 9.11%;}
+.cols-10 > li {width: 8%;}
+.cols-11 > li {width: 7.09%;}
+.cols-12 > li {width: 6.33%;}
+@media (max-width: 767px) {
+	body .rme-items li {width: 98%;float: none;margin: 10px 1%;}
+}
+
+/* Timeline */
+.rme-timeline-point {margin: -1px 1% 0 1%;float: left;height: 20px;}
+.rme-timeline-point:first-child {border-radius: 0;}
+.rme-timeline-point:last-child {border-radius: 0;}
+.rme-arrow {line-height: 14px;}

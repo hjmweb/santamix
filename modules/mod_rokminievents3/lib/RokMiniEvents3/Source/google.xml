@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <subfields name="rokminievents3-sources">
+        <fieldset name="google" addpath="/modules/mod_rokminievents3/lib/RokMiniEvents3/Source/google">
+            <field name="spacer" type="break" default="" label="Google Settings" description=""/>
+            <field name="google" type="list" default="1" label="ROKMINIEVENTS3_GOOGLE_LABEL_ENABLE"
+                   description="ROKMINIEVENTS3_GOOGLE_DESC_ENABLE">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="google_gid" type="text" default="" size="40" label="ROKMINIEVENTS3_GOOGLE_LABEL_CALENDARID"
+                   description="ROKMINIEVENTS3_GOOGLE_DESC_CALENDARID"/>
+            <field name="google_past" type="list" default="1" label="ROKMINIEVENTS3_GOOGLE_LABEL_PASTEVENTS"
+                   description="ROKMINIEVENTS3_GOOGLE_DESC_PASTEVENTS">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field name="google_maxresults" type="text" default="25" size="4"
+                   label="ROKMINIEVENTS3_GOOGLE_LABEL_MAXRESULTS" description="ROKMINIEVENTS3_GOOGLE_DESC_MAXRESULTS"/>
+            <field name="google_gcache" type="text" default="3600" label="ROKMINIEVENTS3_GOOGLE_LABEL_FEEDCACHE"
+                   description="ROKMINIEVENTS3_GOOGLE_DESC_FEEDCACHE"/>
+            <field name="google_links" type="list" label="ROKMINIEVENTS3_GOOGLE_LABEL_LINKTOGOOGLE"
+                   description="ROKMINIEVENTS3_GOOGLE_DESC_LINKTOGOOGLE">
+                <option value="link_no">ROKMINIEVENTS3_GOOGLE_DONTLINK</option>
+                <option value="link_internal">ROKMINIEVENTS3_GOOGLE_LINKASINTERNAL</option>
+                <option value="link_external">ROKMINIEVENTS3_GOOGLE_LINKASEXTERNAL</option>
+            </field>
+        </fieldset>
+    </subfields>
+</form>
