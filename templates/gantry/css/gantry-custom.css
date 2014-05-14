@@ -1,0 +1,31 @@
+/* CSS Document */
+
+
+/* BODY */
+body { background-color:#D3C4A9;}
+
+/* TOP MENU */
+#rt-top-surround {
+background-color: #255474;
+background-image: none;
+border:none;
+height:72px;
+}
+
+/* LOGO */
+
+#rt-top-surround {position:relative; z-index:10; padding-top:5px;}
+div.rt-block._logo_sm {position: absolute; z-index:60; top:-90px; padding:none; }
+
+/* SOCIAL - TOP */
+div.rt-block.social_top {width:45px; height:45px; padding:0px; float:left; }
+
+/* Search */
+div.rt-block._search { padding:0px; top:10px; }
+
+
+#rt-drawer {display:none;}
+
+/* SlIDESHOW */
+div.rt-block._slideshow{position:relative; z-index:0; top:-25px; }
+
