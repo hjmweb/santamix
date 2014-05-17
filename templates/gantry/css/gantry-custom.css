@@ -1,6 +1,8 @@
 /* CSS Document */
 
 
+
+
 /* BODY */
 body { background-color:#D3C4A9;}
 
@@ -27,8 +29,56 @@ div.rt-block._search { padding:0px; top:10px; }
 #rt-drawer {display:none;}
 
 /* SlIDESHOW */
-div.rt-block._slideshow{position:relative; z-index:0; top:-25px; }
+
+div.rt-block._slideshow {position:relative; z-index:0; top:-25px; padding-bottom:0px;}
+
+div.rt-block._slideshow .sprocket-features-desc {background: none repeat scroll 0 0 rgba(247, 147, 30, 0.5); margin:63% 0 0 50%;min-width:400px; text-align:center; }
+
+div.rt-block._slideshow .sprocket-features-desc .readon {display:none;}
+
+div.rt-block._slideshow .sprocket-features-desc .button, .readon, .readmore {   background-color:#194056;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: transparent;
+	float:right;}
+	
+div.rt-block._slideshow .sprocket-features-desc .button:hover, .readon:hover, .readmore:hover { background-color:#255474;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: transparent;
+	float:right;	}
 
 /* CHAMADAS - SPROCK ROCLEK MOSAIC */
+div.rt-block._chamadas {padding:5px; margin-top:5px;}
+div.rt-block._chamadas .sprocket-mosaic-item  {max-height:215px; border:none;}
+div.rt-block._chamadas .sprocket-padding {max-height:195px;}
+div.rt-block._chamadas .sprocket-mosaic-head {position:relative; z-index:50; top:-55px; left:12px;}
+div.rt-block._chamadas .sprocket-mosaic-text {display: none;}
+._chamadas .sprocket-readmore, .sprocket-mosaic-hovercontent {display: none;} /* Esconder leia mais */
 
-.chamada_1 {background-color:#F79321;}
+
+/* FOOTER */
+
+#rt-footer {background-color:#194056; padding-bottom:20px;}
+#rt-copyright {background-color:#F7931E;}
+
+#rt-footer a{ color:#7E94AB; text-decoration:underline;}
+#rt-footer a:hover{ color:#F7931E; text-decoration:none;}
+
+#rt-footer .module-title, {border:none; box-shadow:none;}
+#rt-footer .title, .component-content h2  {border:none; box-shadow:none; padding:0px;}
+#rt-footer .title {color:#E6E6E6; text-shadow:none; font-size:24px; border:none;}
+
+#rt-footer .module-content ul {float:left;}
+#rt-footer .module-content ul li {color:#E6E6E6;}
+/* GENERAL STYLES */
+
+.sprocket-mosaic-title h2 {color:black;}
+
+/*Artigos*/
+.artigo p { font-size:18px;}
+.rt-container .item-page {padding:20px; background-color: #E6E6E6;}
+.artigo {min-height:300px;}
+
+.rt-container {padding:0px;}
+

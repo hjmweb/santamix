@@ -32,9 +32,9 @@ class JConfig {
 	public $ftp_root = '';
 	public $ftp_user = 'hendrik';
 	public $gzip = '0';
-	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
 	public $host = 'localhost';
-	public $lifetime = '15';
+	public $lifetime = '20000';
 	public $list_limit = '20';
 	public $live_site = '';
 	public $log_path = 'D:/xampp_php_5_4_27/htdocs/santamix/log';
@@ -69,4 +69,6 @@ class JConfig {
 	public $unicodeslugs = '0';
 	public $user = 'nicky01_santab';
 	public $mailonline = '1';
+	public $frontediting = '1';
+	public $asset_id = '1';
 }
