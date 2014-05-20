@@ -4,7 +4,7 @@
 
 
 /* BODY */
-body { background-color:#D3C4A9;}
+body { background-color:#D3C4A9; background-image: url(../../../images/deco/background.gif);}
 
 /* TOP MENU */
 #rt-top-surround {
@@ -71,14 +71,28 @@ div.rt-block._chamadas .sprocket-mosaic-text {display: none;}
 
 #rt-footer .module-content ul {float:left;}
 #rt-footer .module-content ul li {color:#E6E6E6;}
+
+
+/* Parceiros */
+
+div.rt-block._parceiros_footer { min-width:100%;}
+div.rt-block._parceiros_footer .banneritem {width:120px; float:left;  padding-bottom:30px; }
+div.rt-block._parceiros_footer .module-title h2{border:none; box-shadow:none; text-shadow:none; font-size:24px; border:none;}
+
+
 /* GENERAL STYLES */
 
 .sprocket-mosaic-title h2 {color:black;}
 
 /*Artigos*/
 .artigo p { font-size:18px;}
-.rt-container .item-page {padding:20px; background-color: #E6E6E6;}
+.rt-container .item-page {padding:20px; background-color: #E6E6E6; display:block; overflow:auto;}
 .artigo {min-height:300px;}
 
 .rt-container {padding:0px;}
 
+/* Artigos */
+
+.item-page_page_article {background-color:#E6E6E6; padding:20px; display:block; overflow:auto;}
+
+div.rt-block._acasa_mosaic .sprocket-padding  {background-color:#E6E6E6; padding:20px; display:block; overflow:auto;}

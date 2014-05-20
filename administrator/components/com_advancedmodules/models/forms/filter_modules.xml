@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<field
+		name="client_id"
+		type="list"
+		onchange="this.form.submit();"
+		class="chzn-small"
+		default="0"
+		>
+		<option value="0">JSITE</option>
+		<option value="1">JADMINISTRATOR</option>
+	</field>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_MODULES_MODULES_FILTER_SEARCH_DESC"
+			hint="COM_MODULES_MODULES_FILTER_SEARCH_DESC"
+			/>
+		<field
+			name="published"
+			type="status"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+		<field
+			name="position"
+			type="position"
+			onchange="this.form.submit();"
+			>
+			<option value="">COM_MODULES_OPTION_SELECT_POSITION</option>
+		</field>
+		<field
+			name="module"
+			type="module"
+			onchange="this.form.submit();"
+			>
+			<option value="">COM_MODULES_OPTION_SELECT_MODULE</option>
+		</field>
+		<field
+			name="menuid"
+			type="menuid"
+			onchange="this.form.submit();"
+			>
+			<option value="">AMM_OPTION_SELECT_MENU_ID</option>
+		</field>
+		<field
+			name="access"
+			type="accesslevel"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_ACCESS</option>
+		</field>
+		<field
+			name="language"
+			type="contentlanguage"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_LANGUAGE</option>
+			<option value="*">JALL</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="COM_CONTENT_LIST_FULL_ORDERING"
+			description="COM_CONTENT_LIST_FULL_ORDERING_DESC"
+			onchange="this.form.submit();"
+			default="a.title ASC"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="ordering ASC">JGRID_HEADING_ORDERING_ASC</option>
+			<option value="ordering DESC">JGRID_HEADING_ORDERING_DESC</option>
+			<option value="a.published ASC">JSTATUS_ASC</option>
+			<option value="a.published DESC">JSTATUS_DESC</option>
+			<option value="color ASC">AMM_HEADING_COLOR_ASC</option>
+			<option value="color DESC">AMM_HEADING_COLOR_DESC</option>
+			<option value="a.title ASC">JGLOBAL_TITLE_ASC</option>
+			<option value="a.title DESC">JGLOBAL_TITLE_DESC</option>
+			<option value="position ASC">AMM_HEADING_POSITION_ASC</option>
+			<option value="position DESC">AMM_HEADING_POSITION_DESC</option>
+			<option value="name ASC">AMM_HEADING_TYPE_ASC</option>
+			<option value="name DESC">AMM_HEADING_TYPE_DESC</option>
+			<option value="pages ASC">AMM_HEADING_PAGES_ASC</option>
+			<option value="pages DESC">AMM_HEADING_PAGES_DESC</option>
+			<option value="a.access ASC">JGRID_HEADING_ACCESS_ASC</option>
+			<option value="a.access DESC">JGRID_HEADING_ACCESS_DESC</option>
+			<option value="language ASC">JGRID_HEADING_LANGUAGE_ASC</option>
+			<option value="language DESC">JGRID_HEADING_LANGUAGE_DESC</option>
+			<option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+		</field>
+		<field
+			name="limit"
+			type="limitbox"
+			class="inputbox input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_CONTENT_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>
